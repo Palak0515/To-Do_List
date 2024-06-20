@@ -1,0 +1,99 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box ;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#037c6e,teal);
+    padding: 20px;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.logo{
+    width: 100%;
+    max-width: 540px;
+    background: whitesmoke;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border:15px solid gainsboro;
+}
+.row{
+    display: flex;
+    background:lightgrey;
+    border-radius: 30px;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border: 4px solid teal;
+}
+input{
+    font-size:19px;
+    flex: 1;
+    border:none;
+    background: transparent;
+    padding: 10px;
+    outline:none;
+}
+button{
+    border:none;
+    padding:16px 50px;
+    outline:none;
+    background:teal;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    font-size: 16px;
+    padding: 16px 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid teal;
+    list-style: none;
+    position: relative;
+    font-style: italic;
+    background-color:lightgrey;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    background-image: url(http://www.clipartbest.com/cliparts/aiq/oB8/aiqoB8x5T.png);
+}
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.-5x9ybQi5YQ2PUBMyWFTRAHaHw&pid=Api&P=0&h=180);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:grey;
+}
